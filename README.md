@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# ✨ CRUD Delta
+## Este é um projeto desenvolvido para o processo seletivo Delta.
+> Desenvolvido utilizando Visual Studio Code
+> Este Frontend foi criado utilizando React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 💻 É necessário o download de algumas tecnologias para o total funcionamento da aplicação, integrando o Backend com o Frontend:
 
-## Available Scripts
 
-In the project directory, you can run:
+* [Docker](https://www.docker.com/get-started) "Entrega software em pacotes chamados contêineres"
+* [DBeaver](https://dbeaver.com/download/) "Ferramenta de administração de banco de dados"
+* [Postgres](https://www.postgresql.org/download/) "Banco de dados"
+* [Insomnia](https://insomnia.rest/pricing) "É um programa que testa as requisições de uma API(GET, POST, PUT, DELETE, PATCH, etc)."
+* [NodeJS](https://nodejs.org/en/)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+>Obs
+Se você já possui o Docker, execute o comando:
+docker run --name postgres-db -e POSTGRES_PASSWORD=123456 -p 5432:5432 -d postgres
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Se não possuir o docker instalado, instale-o e ao terminar:
+Abra o Docker e crie um container em que conste o nome de postgres-db com o banco de dados Postgres, e asenha 123456, rodando na porta 5432
+Em seguida, abra o DBeaver conectando ao Postgres, e crie um Banco de Dados com o nome "delta". Agora crie uma tabela com o nome students.
 
-### `yarn test`
+Foram utilizadas as seguintes tecnologias no projeto
+* [Express](https://expressjs.com/pt-br/starter/installing.html)
+* [Typeorm](https://www.npmjs.com/package/typeorm)
+* [Uuid](https://www.npmjs.com/package/uuid)
+* [Reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
+* [Cors](https://www.npmjs.com/package/cors)
+* [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable) 
+* [Typescript](https://www.typescriptlang.org/download)
+* [Axios](https://www.npmjs.com/package/axios)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Execução
 
-### `yarn build`
+## Clone este repositório
+$ git clone https://github.com/lucianoferreirasa/Delta
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Executar aplicação
+$ yarn start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> O projeto
+Foi desenvolvido um menu que leva a um CRUD de alunos, com armazenamento no banco de dados.
