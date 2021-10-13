@@ -34,7 +34,7 @@ Foram utilizadas as seguintes tecnologias no projeto
 # Execução
 
 ## Clone este repositório
-$ git clone https://github.com/lucianoferreirasa/Delta
+$ git clone https://github.com/lucianoferreirasa/delta-Frontend
 
 ## Executar aplicação
 $ yarn start
