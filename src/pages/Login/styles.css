@@ -1,0 +1,45 @@
+.login-container {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.login-container .content{
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+
+.login-container .content section img {
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+}
+
+.login-container .content section {
+    width: 100%;
+    max-width: 380px;
+  }
+
+.login-container .content h1 {
+    color: rgb(25, 0, 95);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container .content .btn-primary {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}

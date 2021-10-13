@@ -1,0 +1,35 @@
+.profile-container {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  }
+
+.profile-container .content {
+  padding: 70px;
+  background: white;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+  
+.profile-container header {
+    display: flex;
+    align-items: center;
+  }
+
+.profile-container .back-link {
+    text-decoration: none;
+  }
+    
+.profile-container .btn-warning {
+    margin-right: 10px;
+    
+  }
+
+.profile-container .btn-new-student {
+  margin-left: 497px;
+}
+
